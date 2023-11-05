@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form pemesanan pizza</title>
+    </head>
+    <body style="padding: 0; margin: 0; background-color: #DAD4B5;">
+        <div>
+            <nav style="background-color: #952323; padding: 10px 0px 15px 20px;">
+            <h1 style="font-size: 40px; color: #F2E8C6;">Black Goose Bistro/Pizza-on-demand</h1>
+            </nav>
+        </div>
+        <div>
+            <p style="border: 1px solid #A73121; background-color: #A73121; padding: 10px; font-size: 25px;">
+                Our 12" wood-fired pizzas are available for delivery.<br>
+                Build your custom pizza and we'll deliver it within an hour.
+            </p>
+        </div>
+        <div>
+            <h2 style="text-align: center;">Your Information</h2>
+        </div>
+        <form action="http://blackgoosebistro.com/pizza.php" method="post">
+        <div style="margin: 10px;">
+            <table>
+                <tr>
+                    <td>Name: </td>
+                    <td>
+                        <input type="text" name="customername">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address: </td>
+                    <td>
+                        <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Telp: </td>
+                    <td>
+                        <input name="number" name="telephone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td>
+                        <input name="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Delevery Instructions: </td>
+                    <td>
+                        <textarea name="Instructions" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div style="margin: 20px;">
+            <p>
+            <b>Design Your Dream Pizza</b>
+            <br>
+            Pizza Specs
+            </p>
+        </div>
+        <div style="margin: 20px;">
+            <dt>
+                Crust (Choose One):
+            </dt>
+            <input type="radio" name="crust" value="Classic White">Classic White
+            <br>
+            <input type="radio" name="crust" value="multigrain">Multigrain
+            <br>
+            <input type="radio" name="crust" value="cheese stuffed">Cheese Stuffed
+            <br>
+            <input type="radio" name="crust" value="gluten free">Gluten Free
+            </div>
+            <div style="margin: 20px;">
+            <dt>Toppings (Choose as many as you want):</dt>
+            <input type="checkbox" name="toppings[]" value="Red Sauce">Red Sauce
+            <br>
+            <input type="checkbox" name="toppings[]" value="White Sauce">White Sauce
+            <br>
+            <input type="checkbox" name="toppings[]" value="Mozarella">Mozarella
+            </div>
+        <div style="margin: 20px; display: flex;">
+            <div>
+            <dt>Number</dt>
+            <dt>How many pizzas: </dt>
+            </div>
+            <div>
+            <select name="pizzas" style="border-radius: 10px; margin: 20px 0px 0px 5px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option> 
+            </select>
+        </div>
+        </div>
+        <div style="display: flex; margin: 20px;">
+        <div style="margin: 10px;">
+            <input style="background-color: goldenrod; padding: 5px 10px; font-weight: bold;" type="submit" value="Bring me a pizza">
+        </div>
+        <div style="margin: 10px;">
+            <input style="background-color: #952323; color: white; padding: 5px 10px; font-weight: bold;" type="reset">
+        </div>
+    </div>
+    <footer>
+        <div style="background-color: #A73121; padding: 0px 0px 1px 0px; text-align: center;">
+        <h1 style="padding: 10px 0px;">Thanks For Order</h1>
+        <p style="font-size: 25px;">Pizza can make your day better than Yesterday <span style="font-size: 40px;">:)</span></p>
+        </div>
+    </footer>
+    </form>
+    </body>
+</html>
