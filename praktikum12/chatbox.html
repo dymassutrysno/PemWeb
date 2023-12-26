@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox</title>
+</head>
+<body>
+    <div style="border: 1px black solid; max-width: 300px;">
+        <div style="height: 200px; overflow-y: scroll;" id="chatBox"></div>
+        <div>
+            <input id="chat" type="text" style="width: 80%">
+            <button onclick="send()">Kirim</button>
+        </div>
+    </div>
+
+    <script>
+       function send(){
+         // Tangkap elemen yang dibutuhkan
+        const chatBox = document.getElementById("chatBox")
+        const chat = document.getElementById("chat")
+
+        // Validasi input required
+        if(chat.value == "")
+        alert("Input Wajib Di isi")
+
+        // Tambahkan teks dari chat ke chatbox
+        chatBox.innerHTML += chat.value + "<br>"
+
+        // Mengosongkan teks dala chat input
+        chat.value=""
+       }
+
+    </script>
+</body>
+</html>
